@@ -36,7 +36,8 @@ const Topics = () => {
     useEffect(scrollToBottom, [chats, chosenTopic]);
 
     if (!socket) {
-        socket = io(':3001');
+        socket = io('https://chatter-blog-app.herokuapp.com/');
+        //socket = io(':3001');
         socket.on('chat message', (message: ChatMessage) => {
             dispatch(addChatMessage(message));
         });
