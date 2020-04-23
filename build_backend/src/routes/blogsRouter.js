@@ -1,8 +1,8 @@
+"use strict";
 // import express from 'express';
 // const blogsRouter = express.Router();
 // import { client } from '../index';
 // const jwt = require('jsonwebtoken');
-
 // blogsRouter.get('/', async (_req, res) => {
 //     try {
 //         const blogs = await client.query(
@@ -13,7 +13,6 @@
 //         res.send('Error');
 //     }
 // });
-
 // blogsRouter.get('/:id', async (req, res) => {
 //     try {
 //         const blog = await client.query(
@@ -27,7 +26,6 @@
 //         res.status(404).send({ error: `${e}` });
 //     }
 // })
-
 // blogsRouter.post('/', async (req, res, next) => {
 //     const body = req.body;
 //     //console.log('body', body);
@@ -66,7 +64,6 @@
 //         next(e);
 //     }
 // });
-
 // blogsRouter.put('/:id', async (req, res) => {
 //     const body = req.body;
 //     try {
@@ -91,11 +88,9 @@
 //         res.status(404).send({ error: `${e}` });
 //     }
 // });
-
 // blogsRouter.delete('/:id', async (req, res, next) => {
 //     try {
 //         const decodedToken = jwt.verify(req.token, process.env.SECRET);
-
 //         await client.query('BEGIN');
 //         const user = await client.query(
 //             `SELECT id, username, name FROM users WHERE id = $1`,
@@ -125,5 +120,4 @@
 //         next(e);
 //     }
 // });
-
 // module.exports = blogsRouter;

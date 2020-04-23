@@ -1,8 +1,8 @@
+"use strict";
 // const bcrypt = require('bcryptjs');
 // import express from 'express';
 // import { client } from '../index';
 // const usersRouter = express.Router();
-
 // usersRouter.get('/', async (_req, res) => {
 //     try {
 //         const users = await client.query(`SELECT id, username, name FROM users`);
@@ -12,7 +12,6 @@
 //         res.send('Error');
 //     }
 // });
-
 // usersRouter.get('/:id', async (req, res) => {
 //     try {
 //         const user = await client.query(
@@ -27,20 +26,17 @@
 //         res.status(404).send({ error: `${e}` });
 //     }
 // })
-
 // usersRouter.post('/', async (req, res, next) => {
 //     const body = req.body;
 //     //console.log('body', body);
 //     try {
 //         const saltRounds = 10;
 //         const passwordHash = await bcrypt.hash(body.password, saltRounds);
-
 //         const user = {
 //             username: body.username,
 //             name: body.name,
 //             passwordHash
 //         };
-
 //         await client.query('BEGIN');
 //         await client.query(
 //             `INSERT INTO users (username, name, passwordhash)
@@ -56,7 +52,6 @@
 //         next(e);
 //     }
 // });
-
 // usersRouter.put('/:id', async (req, res) => {
 //     const body = req.body;
 //     try {
@@ -80,7 +75,6 @@
 //         res.status(404).send({ error: `${e}` });
 //     }
 // });
-
 // usersRouter.delete('/:id', async (req, res) => {
 //     try {
 //         await client.query('BEGIN');
@@ -101,5 +95,4 @@
 //         res.status(404).json({ error: `${e}` });
 //     }
 // });
-
 // module.exports = usersRouter;

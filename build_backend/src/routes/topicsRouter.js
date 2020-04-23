@@ -1,8 +1,8 @@
+"use strict";
 // import express from 'express';
 // const topicsRouter = express.Router();
 // import { client } from '../index';
 // const jwt = require('jsonwebtoken');
-
 // topicsRouter.get('/chats', async (_req, res) => {
 //     try {
 //         const chats = await client.query(
@@ -13,7 +13,6 @@
 //         res.send('Error');
 //     }
 // });
-
 // topicsRouter.post('/chats', async (req, res, next) => {
 //     const body = req.body;
 //     try {
@@ -49,7 +48,6 @@
 //         next(e);
 //     }
 // });
-
 // topicsRouter.get('/', async (_req, res) => {
 //     try {
 //         const topics = await client.query(
@@ -60,7 +58,6 @@
 //         res.send('Error');
 //     }
 // });
-
 // topicsRouter.get('/:id', async (req, res) => {
 //     try {
 //         const topic = await client.query(
@@ -74,7 +71,6 @@
 //         res.status(404).send({ error: `${e}` });
 //     }
 // });
-
 // topicsRouter.post('/', async (req, res, next) => {
 //     const body = req.body;
 //     try {
@@ -105,11 +101,9 @@
 //         next(e);
 //     }
 // });
-
 // topicsRouter.delete('/:id', async (req, res, next) => {
 //     try {
 //         const decodedToken = jwt.verify(req.token, process.env.SECRET);
-
 //         await client.query('BEGIN');
 //         const user = await client.query(
 //             `SELECT id, username, name FROM users WHERE id = $1`,
@@ -140,5 +134,4 @@
 //         next(e);
 //     }
 // });
-
 // module.exports = topicsRouter;
